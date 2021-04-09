@@ -1,0 +1,29 @@
+<!-- Loop over each object in the post array -->
+<h1>The Tech Blog</h1>
+
+<div class="card">
+  <h4 class="card-header">{{post.title}} Posted by {{post.user_id}} on {{post.date_created }}</h4>
+  <div class="card-body">
+    <p class="card-text">{{post.context}}</p>
+  </div>
+
+</div>
+{{#if comment}}
+{{#each comments as |comment|}}
+<div class="card">
+  <h4 class="card-header"></h4>
+  <div class="card-body">
+    <p class="card-text">{{comment.context}}</p>
+    <p class="card-text">-{{comment.commenter_id}}, {{comment.date_created}}</p>
+  </div>
+</div>
+{{/each}}
+{{/if}}
+
+<form>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Comment</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter comment here">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

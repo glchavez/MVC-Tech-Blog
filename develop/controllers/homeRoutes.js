@@ -28,7 +28,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-// Display a specific post on homepage to add comment
+// Display a specific post on homepage to add comment (also displays past comments)
 router.get('/post/:id', withAuth, async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id, {
@@ -42,7 +42,7 @@ router.get('/post/:id', withAuth, async (req, res) => {
 
     const posts = postData.get({ plain: true });
 
-    res.render('comment-Post', {
+    res.render('comment', {
       ...posts,
       logged_in: req.session.logged_in
     });
