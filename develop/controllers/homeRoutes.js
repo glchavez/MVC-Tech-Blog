@@ -29,17 +29,17 @@ router.get('/', async (req, res) => {
 });
 
 // Display a specific post on homepage to add comment (also displays past comments)
-// Look at Activity 12 as example
-router.get('/post/:id', async (req, res) => {
+router.get('/post/:id', withAuth, async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id, {
       include: [
-        User,
+        {
+          model: User,
+          attributes: ['username'],
+        },
         {
           model: Comment,
-          where: {
-            post_id: req.params.id,
-          },
+          attributes: ['content', 'user_id', 'date_created'],
           include: [
             User,
           ],
@@ -47,7 +47,7 @@ router.get('/post/:id', async (req, res) => {
       ],
     });
 
-    const posts = postData.get({ plain: true });
+const posts = postData.get({ plain: true });
 console.log(posts)
     res.render('comment', {
       posts,
