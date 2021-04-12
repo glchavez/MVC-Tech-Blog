@@ -13,11 +13,4 @@ router.get('/signup', (req, res) => {
   res.render('sign-Up');
 });
 
-// Display logout page
-router.get('/logout', (req, res) => {
-  
-  res.render('logout');
-});
-
-
 module.exports = router;

@@ -2,19 +2,19 @@
 <h1>The Tech Blog</h1>
 
 <div class="card">
-  <h4 class="card-header">{{post.title}} Posted by {{post.user_id}} on {{post.date_created }}</h4>
+  <h4 class="card-header">{{posts.title}} Posted by {{posts.user.username}} on {{format_date posts.date_created}}</h4>
   <div class="card-body">
-    <p class="card-text">{{post.context}}</p>
+    <p class="card-text">{{posts.content}}</p>
   </div>
 
 </div>
-{{#if comment}}
-{{#each comments as |comment|}}
+{{#if posts.comments.length}}
+{{#each posts.comments as |comment|}}
 <div class="card">
-  <h4 class="card-header"></h4>
+  <h6 class="card-header">Comment</h6>
   <div class="card-body">
-    <p class="card-text">{{comment.context}}</p>
-    <p class="card-text">-{{comment.commenter_id}}, {{comment.date_created}}</p>
+    <p class="card-text">{{comment.content}}</p>
+    <p class="card-text">-{{comment.user.username}}, {{format_date comment.date_created}}</p>
   </div>
 </div>
 {{/each}}
@@ -22,7 +22,7 @@
 
 <form>
   <div class="form-group">
-    <label for="formGroupExampleInput">Comment</label>
+    <label for="formGroupExampleInput">Leave a Comment</label>
     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter comment here">
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
