@@ -2,7 +2,7 @@
 
 {{#if posts.length}}
 <div class="col-md-6 project-list">
-  <h3>Current Projects:</h3>
+  <h3>Current Posts:</h3>
 
   {{#each posts as |post|}}
   <div class="row mb-2">
@@ -15,5 +15,5 @@
 {{/if}}
 
 <div>
-  <button role="button" class="btn btn-primary" href="/dashboard/create">New Post</button>
+  <a role="button" class="btn btn-primary" href="/dashboard/post/create">New Post</a>
 </div>
