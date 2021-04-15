@@ -1,14 +1,18 @@
 [
   {
-    "username": "Test User One",
+    "username": "Tech Wiz",
     "password": "passwordOne"
   },
     {
-    "username": "Test User Two",
+    "username": "Running the Dom",
     "password": "passwordTwo"
   },
   {
-    "username": "Test User Three",
+    "username": "Rick Sanchez",
     "password": "passwordThree"
+  },
+  {
+    "username": "Morty S.",
+    "password": "passwordFour"
   }
 ]

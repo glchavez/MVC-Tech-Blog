@@ -1,18 +1,18 @@
 [
   {
-    "title": "Test Post One",
-    "content": "This is test content for Test Post One"
+    "title": "MVC method",
+    "content": "MVC stands for Model-View-Controller and is a great method to build a functional website and database."
   },
     {
-    "title": "Test Post Two",
-    "content": "This is test content for Test Post Two"
+    "title": "Handlebars.js",
+    "content": "When using the MVC method, a great tool to create different html pages is handlebars.js!"
   },
   {
-    "title": "Test Post Three",
-    "content": "This is test content for Test Post Three"
+    "title": "MySQL",
+    "content": "It has been around for awhile and works great to create a functional database."
   },
   {
-    "title": "Test Post Four",
-    "content": "This is test content for Test Post Four"
+    "title": "Web Development",
+    "content": "A growing industry that provides plenty of opportunity for growth. You will never have a dull moment, as you will be constantly learning new things."
   }
 ]
