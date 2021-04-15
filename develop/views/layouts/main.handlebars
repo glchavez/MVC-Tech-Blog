@@ -22,16 +22,26 @@
     <li class="nav-item">
       <a class="nav-link" href="/">Home</a>
     </li>
+    {{!-- Create an if statement for login/logged out dashbaord access --}}
+    {{#if logged_in}}
     <li class="nav-item">
       <a class="nav-link" href="/dashboard/:id">Dashboard</a>
     </li>
-    {{!-- create an if statement for login/log out --}}
+    {{else}}
     <li class="nav-item">
-      <a class="nav-link" href="/credential/login">Login</a>
+      <a class="nav-link" href="/credential/login">Dashboard</a>
     </li>
+    {{/if}}
+    {{!-- create an if statement for login/log out --}}
+    {{#if logged_in}}
     <li class="nav-item">
       <a id="logout" class="nav-link" href="#">Log Out</a>
     </li>
+    {{else}}
+    <li class="nav-item">
+      <a class="nav-link" href="/credential/login">Login</a>
+    </li>
+    {{/if}}
   </ul>
 
   {{{body}}}
