@@ -11,4 +11,21 @@ const logout = async () => {
   }
 };
 
+let inactivityTime = function () {
+  let time;
+  window.onload = resetTimer;
+  document.onmousemove = resetTimer;
+  document.onkeypress = resetTimer;
+
+  logout;
+  
+  function resetTimer() {
+    clearTimeout(time);
+    time = setTimeout(logout, 30000)
+  }
+};
+
+
 document.querySelector('#logout').addEventListener('click', logout);
+
+window.addEventListener('load', inactivityTime, true);

@@ -20,10 +20,17 @@
 {{/each}}
 {{/if}}
 
-<form>
+<form class="px-4 py-3 new-comment">
   <div class="form-group">
-    <label for="formGroupExampleInput">Leave a Comment</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter comment here">
+    <label>Leave a Comment:</label>
   </div>
+  <div class="form-group">
+    <label for="comment-content">Content:</label>
+    <input type="text" class="form-control" id="comment-content" value="">
+  </div>
+  <input type="hidden" value="{{posts.id}}" id="post-id">
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+
+
+<script src="/js/comment.js"></script>
