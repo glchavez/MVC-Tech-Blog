@@ -1,8 +1,11 @@
-<!-- Loop over each object in the post array -->
 <h1>The Tech Blog</h1>
 
 <div class="card">
-  <h4 class="card-header">{{posts.title}} Posted by {{posts.user.username}} on {{format_date posts.date_created}}</h4>
+  <h4 class="card-header">
+    <div>{{posts.title}}</div>
+    <div class="detail-font">Posted by {{posts.user.username}} on {{format_date posts.date_created}}</div>
+
+  </h4>
   <div class="card-body">
     <p class="card-text">{{posts.content}}</p>
   </div>

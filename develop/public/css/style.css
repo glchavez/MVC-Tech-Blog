@@ -1,24 +1,35 @@
-header, .project:not(:last-child) {
-  border-bottom: 1px solid #ccc;
+.card {
+  padding: 25px;
 }
 
-.no-button {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  color: #1b89bc;
-  text-decoration: none;
-  font-size: 100%;
+.card-header,
+.nav,
+h1 {
+  background-color: rgb(32, 32, 32);
 }
 
-.no-button:hover {
-  color: #065b83;
-  text-decoration: underline;
+.card-body {
+  background-color: rgb(238, 235, 235);
 }
 
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
+a,
+.detail-font,
+.card-header {
+  color: white;
+}
+
+h1 {
+  color: rgb(201, 223, 78);
+}
+
+.detail-font {
+  font-size: small;
+}
+
+.btn-danger {
+  margin-top: 15px;
+}
+
+.new-post {
+  margin-left: 15px;
 }
