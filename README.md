@@ -17,7 +17,7 @@ To view the live blog, click [here](https://frozen-caverns-37575.herokuapp.com/)
 <li>Bootstrap</li>
 <li>CSS</li>
 <li>JavaScript</li>
-<li>MySQL</li>
+<li>MySQL 2</li>
 <li>Sequelize</li>
 <li>VS Code</li>
 </ul>
