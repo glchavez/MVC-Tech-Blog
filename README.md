@@ -8,6 +8,20 @@ This application is intended to initiate conversation over current tech. This co
 
 Main challenges faced when creating this application was allowing individuals the ability to create comments on other posts and displaying these comments after being created. For future improvements, i would like to give the user the ability to delete a comment they have made on someones post and implementing a personal messaging system between users.
 
+To view the live blog, click [here](https://frozen-caverns-37575.herokuapp.com/).
+
+## Technologies Used
+
+<ul>
+<li>HTML</li>
+<li>Bootstrap</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<li>MySQL</li>
+<li>Sequelize</li>
+<li>VS Code</li>
+</ul>
+
 ## Installation
 
 To install this repository for use, you will need to download all files in the [MVC Tech Blog](https://github.com/glchavez/MVC-Tech-Blog) repository. You will then need to run the schema.sql file within the db folder in MySQL to set the database.
@@ -47,6 +61,10 @@ Comment:
 I would like to provide credit to [The Denver Univeristy Coding Bootcamp](https://bootcamp.du.edu/coding/) for providing me with the materials, intstructions, and one-on-one assistance to perform this project.
 
 In addition, I would like to provide credit to [W3 Docs](https://www.w3docs.com/snippets/javascript/how-to-detect-idle-time-in-javascript.html) for providing me with information on how to detect idle time and logout a user if idle time limits have been reached.
+
+## Contact Information
+
+To contact me, please feel free to email me at giochavez320@gmail.com.
 
 ## License
 
