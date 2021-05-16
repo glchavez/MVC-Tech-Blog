@@ -1,10 +1,10 @@
 # MVC-Tech-Blog
 
-## Description
+This tech blog is intended to initiate conversation over current tech around the world. This conversation assists others in learning about new tech or enhancing their knowledge of existing tech.
+
+## Overview
 
 This application allows users to share their thoughts and opinions on a social media platform, as well as comment on others posts.
-
-This application is intended to initiate conversation over current tech. This conversation assists others in learning about new tech or enhancing their knowledge of existing tech.
 
 Main challenges faced when creating this application was allowing individuals the ability to create comments on other posts and displaying these comments after being created. For future improvements, i would like to give the user the ability to delete a comment they have made on someones post and implementing a personal messaging system between users.
 
